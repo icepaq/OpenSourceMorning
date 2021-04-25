@@ -2,8 +2,8 @@
 
 
 // If someone could add asynchronous support that would be great
-export default  (req, res) => {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=toronto&appid={API KEY HERE}")
+export default async (req, res) =>  {
+    await fetch("http://api.openweathermap.org/data/2.5/weather?q=toronto&appid={API KEY HERE}")
       .then(response => response.json())
       .then(
         (result) => {
