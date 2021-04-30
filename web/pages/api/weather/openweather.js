@@ -4,7 +4,7 @@ module.exports = class openweather {
 
     async main(city) {
         var results;
-        await fetch("http://api.openweathermap.org/data/2.5/weather?q=toronto&appid=7236e1f49eb4ce60f4c54f98656bfbee")
+        await fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city  + "&appid=7236e1f49eb4ce60f4c54f98656bfbee")
             .then(response => response.json())
             .then(
                 (result) => {
@@ -19,10 +19,9 @@ module.exports = class openweather {
                         wind_deg: result.wind.deg,
                     }
                     
-                    results = r;  // But for some reason when r is returned, it's undefined...
+                    results = r;
                 }
             );
             return results;
     }
 }
-//export default openweather;
