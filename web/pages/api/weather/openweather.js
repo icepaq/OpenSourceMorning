@@ -3,7 +3,7 @@
 module.exports = class openweather {
 
     async main(city) {
-        var results;
+        let results;
         await fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city  + "&appid=7236e1f49eb4ce60f4c54f98656bfbee")
             .then(response => response.json())
             .then(
