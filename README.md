@@ -4,7 +4,9 @@ Your weather, news, traffic updates all in one place!
 ## Tech Stack
 
 Front End: React.js
+
 Backend: Express, Next.js
+
 Databse: MongoDB
 
 ### Contributing
