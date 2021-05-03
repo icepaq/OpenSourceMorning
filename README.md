@@ -1,6 +1,12 @@
 ## Open Source Morning
 Your weather, news, traffic updates all in one place!
 
+## Tech Stack
+
+Front End: React.js
+Backend: Express, Next.js
+Databse: MongoDB
+
 ### Contributing
 This project is in it's starting stages. Until there is a formal project structure and a CONTRIBUTE.md file contact one of the project founders via Discord if you would like to contribute.
 
