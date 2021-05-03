@@ -19,6 +19,7 @@ module.exports = class openweather {
                         wind_gust: result.wind.gust,
                         wind_deg: result.wind.deg,
                         common: 'ABC',
+                        epoch: Date.now()
                     }
                     
                     results = r;

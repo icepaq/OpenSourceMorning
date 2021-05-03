@@ -3,10 +3,10 @@ const OpenWeather = require('./openweather.js');
 
 module.exports = class UpdateWeather {
 
-    async main() {
+    async main(city) {
         const { MongoClient } = require("mongodb");
         const open = new OpenWeather();
-        // Replace the uri string with your MongoDB deployment's connection string.
+
         const uri =
             "mongodb+srv://my_username:my_password@cluster0.dgxwh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
         const client = new MongoClient(uri, {
@@ -15,24 +15,23 @@ module.exports = class UpdateWeather {
         });
 
         let temps = {};
-        async function run() {
-            try {
-                await client.connect();
 
-                let weather = await open.main('toronto');
+        try {
+            await client.connect();
 
-                const database = client.db('weatherdb');
-                const collection = database.collection('weatherdb');
+            let weather = await open.main(city);
 
-                const query = weather;
-                temps = await collection.insertOne(query);
+            const database = client.db('weatherdb');
+            const collection = database.collection('weatherdb');
 
-                console.log(temps);
-            } finally {
-                // Ensures that the client will close when you finish/error
-                await client.close();
-            }
+            const query = weather;
+            temps = await collection.insertOne(query);
+
+            console.log(temps);
+        } finally {
+            await client.close();
         }
+
         return temps;
     }
 
