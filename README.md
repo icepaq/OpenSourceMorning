@@ -10,7 +10,7 @@ Backend: Express, Next.js
 Databse: MongoDB
 
 ### Contributing
-This project is in it's starting stages. Until there is a formal project structure and a CONTRIBUTE.md file contact one of the project founders via Discord if you would like to contribute.
+This project is in it's starting stages. Reference the [Contribution Guidelines](https://github.com/icepaq/OpenSourceMorning/blob/main/CONTRIBUTE.md) for more information on how to contribute.
 
 [Anton#2908](https://github.com/icepaq)
 
