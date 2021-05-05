@@ -1,0 +1,15 @@
+{
+    "_id": {
+        "$oid": "608f7f5b299b6021fc15a396"
+    },
+    "city": "toronto",
+    "temp": "9.7",
+    "weather_decription": "overcast clouds",
+    "pressure": null,
+    "humidity": null,
+    "wind_speed": 3.56,
+    "wind_gust": 8.87,
+    "wind_deg": 79,
+    "common": "ABC",
+    "epoch": 1620016987948
+}
