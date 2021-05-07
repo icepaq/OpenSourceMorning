@@ -1,4 +1,6 @@
-{
+
+{ 
+    "TABLE_NAME_DO_NOT_ADD_THIS": "weatherdb.weatherdb"
     "_id": {
         "$oid": "608f7f5b299b6021fc15a396"
     },
@@ -12,4 +14,15 @@
     "wind_deg": 79,
     "common": "ABC",
     "epoch": 1620016987948
+}
+
+
+{
+    "TABLE_NAME_DO_NOT_ADD_THIS": "weatherdb.users",
+    "_id": {
+        "$oid": "60943e6d1abd045578d0f018"
+    },
+    "username": "anton",
+    "email": "a@anton.ca",
+    "password": "df42695a50c54b033bd094065cf40ef15e274c9dc4313c4eeeca4e573f749b75f71dd570b81098d917e95c6ad2a6efcb22c0043164c8abe12bdb6094282a8c1f"
 }
